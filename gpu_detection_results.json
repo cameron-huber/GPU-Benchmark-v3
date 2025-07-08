@@ -1,0 +1,115 @@
+{
+  "system_info": {
+    "hostname": "antalpha-Super-Server100207",
+    "kernel": "6.5.0-35-generic",
+    "os": "Ubuntu 22.04.4 LTS",
+    "cpu": "AMD EPYC 7282 16-Core Processor",
+    "memory_gb": "251",
+    "detection_time": "2025-07-09T02:07:43.876489"
+  },
+  "gpu_info": [
+    {
+      "vendor": "NVIDIA",
+      "index": "0",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "32",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:01:00.0",
+      "uuid": "GPU-56615e13-ea28-5102-304f-fb6049db2703"
+    },
+    {
+      "vendor": "NVIDIA",
+      "index": "1",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "31",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:21:00.0",
+      "uuid": "GPU-fc86980e-52fe-df6d-63e3-26f3b5d32dd5"
+    },
+    {
+      "vendor": "NVIDIA",
+      "index": "2",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "32",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:22:00.0",
+      "uuid": "GPU-cff6fb20-55da-2366-4017-ed553f7f1ae0"
+    },
+    {
+      "vendor": "NVIDIA",
+      "index": "3",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "33",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:41:00.0",
+      "uuid": "GPU-078ea885-9ad1-4c80-a4cb-912ef149e648"
+    },
+    {
+      "vendor": "NVIDIA",
+      "index": "4",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "33",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:42:00.0",
+      "uuid": "GPU-9782d0a2-84b6-c154-6824-d825f0bee9b6"
+    },
+    {
+      "vendor": "NVIDIA",
+      "index": "5",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "33",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:61:00.0",
+      "uuid": "GPU-cd020250-b84b-4e85-4bd5-dc3e27331edc"
+    },
+    {
+      "vendor": "NVIDIA",
+      "index": "6",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "30",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:A1:00.0",
+      "uuid": "GPU-0ab15501-09de-e8a4-d127-5183aa9a47fe"
+    },
+    {
+      "vendor": "NVIDIA",
+      "index": "7",
+      "name": "NVIDIA GeForce RTX 4090",
+      "driver_version": "575.57.08",
+      "memory_total_mb": "24564",
+      "power_max_limit_w": "450.00",
+      "temperature_c": "30",
+      "compute_capability": "8.9",
+      "bus_id": "00000000:A2:00.0",
+      "uuid": "GPU-6bb03b7f-fe35-4db3-f48d-f9fa60c5b953"
+    },
+    {
+      "vendor": "Unknown",
+      "name": "ASPEED Technology, Inc. ASPEED Graphics Family (rev 52)",
+      "pci_id": "04:00.0 VGA compatible controller",
+      "detection_method": "lspci"
+    }
+  ],
+  "total_gpus": 9
+}

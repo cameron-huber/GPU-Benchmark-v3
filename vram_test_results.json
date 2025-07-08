@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-07-09T02:13:26.655233",
+  "total_gpus": 8,
+  "total_vram_mb": 196512,
+  "total_vram_gb": 191.91,
+  "gpus": [
+    {
+      "id": "0",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    },
+    {
+      "id": "1",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    },
+    {
+      "id": "2",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    },
+    {
+      "id": "3",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    },
+    {
+      "id": "4",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    },
+    {
+      "id": "5",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    },
+    {
+      "id": "6",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    },
+    {
+      "id": "7",
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mb": 24564,
+      "used_mb": 15,
+      "free_mb": 24067,
+      "total_gb": 23.99,
+      "used_gb": 0.01,
+      "free_gb": 23.5,
+      "usage_percent": 0.1
+    }
+  ]
+}
