@@ -1,0 +1,156 @@
+{
+  "timestamp": "2025-07-09T02:45:52.548032",
+  "gpu_count": 8,
+  "tests": {
+    "All-Reduce": {
+      "bandwidth_data": [
+        {
+          "size_bytes": 1024,
+          "time_us": 49.09,
+          "algbw": 0.02,
+          "busbw": 0.04
+        },
+        {
+          "size_bytes": 2048,
+          "time_us": 48.84,
+          "algbw": 0.04,
+          "busbw": 0.07
+        },
+        {
+          "size_bytes": 4096,
+          "time_us": 48.61,
+          "algbw": 0.08,
+          "busbw": 0.15
+        },
+        {
+          "size_bytes": 8192,
+          "time_us": 49.09,
+          "algbw": 0.17,
+          "busbw": 0.29
+        },
+        {
+          "size_bytes": 16384,
+          "time_us": 49.02,
+          "algbw": 0.33,
+          "busbw": 0.58
+        },
+        {
+          "size_bytes": 32768,
+          "time_us": 52.68,
+          "algbw": 0.62,
+          "busbw": 1.09
+        },
+        {
+          "size_bytes": 65536,
+          "time_us": 93.99,
+          "algbw": 0.7,
+          "busbw": 1.22
+        },
+        {
+          "size_bytes": 131072,
+          "time_us": 172.8,
+          "algbw": 0.76,
+          "busbw": 1.33
+        },
+        {
+          "size_bytes": 262144,
+          "time_us": 325.1,
+          "algbw": 0.81,
+          "busbw": 1.41
+        },
+        {
+          "size_bytes": 524288,
+          "time_us": 536.0,
+          "algbw": 0.98,
+          "busbw": 1.71
+        },
+        {
+          "size_bytes": 1048576,
+          "time_us": 899.2,
+          "algbw": 1.17,
+          "busbw": 2.04
+        }
+      ],
+      "avg_bus_bandwidth": 0.902501
+    },
+    "All-Gather": {
+      "bandwidth_data": [],
+      "avg_bus_bandwidth": 0.721764
+    },
+    "Broadcast": {
+      "bandwidth_data": [],
+      "avg_bus_bandwidth": 0.850734
+    },
+    "Reduce-Scatter": {
+      "bandwidth_data": [
+        {
+          "size_bytes": 1024,
+          "time_us": 49.1,
+          "algbw": 0.02,
+          "busbw": 0.02
+        },
+        {
+          "size_bytes": 2048,
+          "time_us": 48.24,
+          "algbw": 0.04,
+          "busbw": 0.04
+        },
+        {
+          "size_bytes": 4096,
+          "time_us": 48.99,
+          "algbw": 0.08,
+          "busbw": 0.07
+        },
+        {
+          "size_bytes": 8192,
+          "time_us": 48.68,
+          "algbw": 0.17,
+          "busbw": 0.15
+        },
+        {
+          "size_bytes": 16384,
+          "time_us": 48.37,
+          "algbw": 0.34,
+          "busbw": 0.3
+        },
+        {
+          "size_bytes": 32768,
+          "time_us": 49.93,
+          "algbw": 0.66,
+          "busbw": 0.57
+        },
+        {
+          "size_bytes": 65536,
+          "time_us": 56.61,
+          "algbw": 1.16,
+          "busbw": 1.01
+        },
+        {
+          "size_bytes": 131072,
+          "time_us": 99.1,
+          "algbw": 1.32,
+          "busbw": 1.16
+        },
+        {
+          "size_bytes": 262144,
+          "time_us": 189.5,
+          "algbw": 1.38,
+          "busbw": 1.21
+        },
+        {
+          "size_bytes": 524288,
+          "time_us": 289.5,
+          "algbw": 1.81,
+          "busbw": 1.58
+        },
+        {
+          "size_bytes": 1048576,
+          "time_us": 598.8,
+          "algbw": 1.75,
+          "busbw": 1.53
+        }
+      ],
+      "avg_bus_bandwidth": 0.714392
+    }
+  }
+}
