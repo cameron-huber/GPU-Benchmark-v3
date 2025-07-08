@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-07-09T02:16:45.638299",
+  "cuda_version": "12.9",
+  "driver_version": "575.57.08",
+  "nvcc_version": "Not installed",
+  "nvcc_available": false
+}
