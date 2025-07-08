@@ -1,0 +1,29 @@
+💾 Disk Read Speed Test
+=======================
+🔍 Checking disk space...
+✅ Disk space check passed (2779.20GB available)
+📝 Creating 1GB test file with random data...
+   This may take a moment...
+✅ Test file created successfully (5.06s)
+🔄 Clearing filesystem cache...
+   Cache clear skipped (no root privileges)
+📊 Performing read speed test...
+   Reading 1GB file...
+
+📈 Read Speed Test Results:
+==========================
+File size: 1024MB (1,073,741,824 bytes)
+Read time: 0.18s
+Read speed: 5801.53 MB/s
+Performance: 🚀 Excellent (NVMe SSD)
+
+💾 Storage Information:
+======================
+Total space: 3518.26GB
+Used space: 591.57GB
+Available space: 2779.20GB
+Filesystem: ext4
+
+💾 Results saved to: disk_read_speed_results.json
+✅ Disk read speed test completed
+🧹 Cleaning up temporary file...

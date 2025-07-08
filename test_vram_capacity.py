@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 VRAM Capacity Test - GPU Benchmark v3
-Tests and reports VRAM capacity for all detected GPUs
+Professional VRAM capacity analysis and reporting
 """
 
 import subprocess
@@ -18,14 +18,14 @@ def run_command(cmd):
 
 def test_vram_capacity():
     """Test VRAM capacity for all GPUs"""
-    print("🎮 VRAM Capacity Test")
+    print("VRAM Capacity Analysis")
     print("=" * 50)
     
     # Get VRAM info
     vram_data = run_command("nvidia-smi --query-gpu=index,name,memory.total,memory.used,memory.free --format=csv,noheader,nounits")
     
     if not vram_data:
-        print("❌ Error: Could not retrieve VRAM information")
+        print("ERROR: Could not retrieve VRAM information")
         return
     
     gpus = []
@@ -55,7 +55,7 @@ def test_vram_capacity():
                 gpus.append(gpu_info)
                 total_vram += total_mb
                 
-                print(f"📱 GPU {gpu_id}: {name}")
+                print(f"GPU {gpu_id}: {name}")
                 print(f"   Total VRAM: {gpu_info['total_gb']} GB ({total_mb} MB)")
                 print(f"   Used VRAM:  {gpu_info['used_gb']} GB ({used_mb} MB)")
                 print(f"   Free VRAM:  {gpu_info['free_gb']} GB ({free_mb} MB)")
@@ -63,7 +63,7 @@ def test_vram_capacity():
                 print()
     
     # Summary
-    print("📊 VRAM SUMMARY")
+    print("VRAM ANALYSIS SUMMARY")
     print("=" * 50)
     print(f"Total GPUs: {len(gpus)}")
     print(f"Total VRAM: {round(total_vram / 1024, 2)} GB ({total_vram} MB)")
@@ -81,8 +81,8 @@ def test_vram_capacity():
     with open('vram_test_results.json', 'w') as f:
         json.dump(results, f, indent=2)
     
-    print(f"\n💾 Results saved to: vram_test_results.json")
-    print("✅ VRAM capacity test completed")
+    print(f"\nResults saved to: vram_test_results.json")
+    print("VRAM capacity analysis completed")
 
 if __name__ == "__main__":
     test_vram_capacity()

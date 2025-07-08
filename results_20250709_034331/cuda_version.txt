@@ -1,0 +1,6 @@
+🔥 CUDA Version Test
+=========================
+✅ CUDA Version: 12.9
+🔧 Driver Version: 575.57.08
+⚠️  NVCC not found (CUDA development tools not installed)
+✅ CUDA version test completed

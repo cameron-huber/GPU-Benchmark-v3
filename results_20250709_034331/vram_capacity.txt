@@ -1,0 +1,58 @@
+🎮 VRAM Capacity Test
+==================================================
+📱 GPU 0: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📱 GPU 1: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📱 GPU 2: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📱 GPU 3: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📱 GPU 4: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📱 GPU 5: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📱 GPU 6: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📱 GPU 7: NVIDIA GeForce RTX 4090
+   Total VRAM: 23.99 GB (24564 MB)
+   Used VRAM:  0.01 GB (15 MB)
+   Free VRAM:  23.5 GB (24067 MB)
+   Usage: 0.1%
+
+📊 VRAM SUMMARY
+==================================================
+Total GPUs: 8
+Total VRAM: 191.91 GB (196512 MB)
+Average VRAM per GPU: 23.99 GB
+
+💾 Results saved to: vram_test_results.json
+✅ VRAM capacity test completed

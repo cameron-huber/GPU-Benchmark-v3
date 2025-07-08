@@ -20,13 +20,13 @@ def run_command(cmd, cwd=None):
 
 def test_bandwidth():
     """Test bandwidth using NCCL tests"""
-    print("🚀 PCIe/NVLink Bandwidth Test")
+    print("STATUS: PCIe/NVLink Bandwidth Test")
     print("=" * 50)
     
     # Check if NCCL tests are available
     nccl_path = "nccl-tests/build"
     if not os.path.exists(nccl_path):
-        print("❌ NCCL tests not found. Please run ./setup.sh first")
+        print("ERROR: NCCL tests not found. Please run ./setup.sh first")
         return
     
     # Get GPU count
@@ -34,14 +34,14 @@ def test_bandwidth():
     stdout, stderr, returncode = run_command(gpu_count_cmd)
     
     if returncode != 0:
-        print("❌ Failed to get GPU count")
+        print("ERROR: Failed to get GPU count")
         return
     
     try:
         gpu_count = int(stdout.strip().split('\n')[0])
-        print(f"📱 Detected {gpu_count} GPUs")
+        print(f"GPU: Detected {gpu_count} GPUs")
     except:
-        print("❌ Failed to parse GPU count")
+        print("ERROR: Failed to parse GPU count")
         return
     
     # Run bandwidth tests
@@ -59,14 +59,14 @@ def test_bandwidth():
     }
     
     for test_name, test_binary in tests:
-        print(f"\n🔍 Running {test_name} test...")
+        print(f"\nTESTING: Running {test_name} test...")
         
         # Run test with multiple GPUs (smaller range for faster execution)
         cmd = f"./{test_binary} -b 1K -e 1M -f 2 -g {gpu_count}"
         stdout, stderr, returncode = run_command(cmd, cwd=nccl_path)
         
         if returncode != 0:
-            print(f"❌ {test_name} test failed: {stderr}")
+            print(f"ERROR: {test_name} test failed: {stderr}")
             continue
         
         # Parse results
@@ -78,20 +78,20 @@ def test_bandwidth():
         
         if bandwidth_data:
             max_bw = max(bandwidth_data, key=lambda x: x['algbw'])
-            print(f"✅ {test_name}")
+            print(f"SUCCESS: {test_name}")
             print(f"   Max Algorithm BW: {max_bw['algbw']:.2f} GB/s")
             print(f"   Max Bus BW: {max_bw['busbw']:.2f} GB/s")
             if avg_bandwidth:
                 print(f"   Average Bus BW: {avg_bandwidth:.2f} GB/s")
         else:
-            print(f"⚠️  {test_name} - Could not parse bandwidth data")
+            print(f"WARNING:  {test_name} - Could not parse bandwidth data")
     
     # Save results
     with open('bandwidth_test_results.json', 'w') as f:
         json.dump(results, f, indent=2)
     
-    print(f"\n💾 Results saved to: bandwidth_test_results.json")
-    print("✅ Bandwidth test completed")
+    print(f"\nRESULTS: Results saved to: bandwidth_test_results.json")
+    print("SUCCESS: Bandwidth test completed")
 
 def parse_nccl_output(output):
     """Parse NCCL test output to extract bandwidth data"""

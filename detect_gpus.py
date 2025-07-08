@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 GPU Detection Script for GPU Benchmark v3
-Detects and reports GPU models present on the system
+Professional GPU hardware detection and system profiling
 """
 
 import subprocess
@@ -30,7 +30,7 @@ class GPUDetector:
     
     def detect_nvidia_gpus(self):
         """Detect NVIDIA GPUs using nvidia-smi"""
-        print("🔍 Detecting NVIDIA GPUs...")
+        print("STATUS: Detecting NVIDIA GPUs...")
         
         # Check if nvidia-smi is available
         nvidia_smi_output = self.run_command("nvidia-smi --query-gpu=index,name,driver_version,memory.total,power.max_limit,temperature.gpu --format=csv,noheader,nounits")
@@ -68,7 +68,7 @@ class GPUDetector:
     
     def detect_other_gpus(self):
         """Detect other GPUs using lspci"""
-        print("🔍 Detecting other GPUs via lspci...")
+        print("STATUS: Detecting additional GPUs via lspci...")
         
         lspci_output = self.run_command("lspci | grep -i 'vga\\|3d\\|display'")
         if lspci_output:
@@ -107,7 +107,7 @@ class GPUDetector:
     
     def get_system_info(self):
         """Get system information"""
-        print("📊 Gathering system information...")
+        print("STATUS: Gathering system information...")
         
         self.system_info = {
             'hostname': self.run_command("hostname"),
@@ -121,26 +121,26 @@ class GPUDetector:
     def display_results(self):
         """Display detection results"""
         print("\n" + "="*60)
-        print("🖥️  GPU DETECTION RESULTS")
+        print("GPU DETECTION RESULTS")
         print("="*60)
         
         # System info
-        print(f"🖥️  System: {self.system_info.get('hostname', 'Unknown')}")
-        print(f"🐧 OS: {self.system_info.get('os', 'Unknown')}")
-        print(f"🧠 CPU: {self.system_info.get('cpu', 'Unknown')}")
-        print(f"💾 Memory: {self.system_info.get('memory_gb', 'Unknown')} GB")
-        print(f"📅 Detection Time: {self.system_info.get('detection_time', 'Unknown')}")
+        print(f"System: {self.system_info.get('hostname', 'Unknown')}")
+        print(f"OS: {self.system_info.get('os', 'Unknown')}")
+        print(f"CPU: {self.system_info.get('cpu', 'Unknown')}")
+        print(f"Memory: {self.system_info.get('memory_gb', 'Unknown')} GB")
+        print(f"Detection Time: {self.system_info.get('detection_time', 'Unknown')}")
         
         print("\n" + "-"*60)
-        print("🎮 GPU INFORMATION")
+        print("GPU HARDWARE INFORMATION")
         print("-"*60)
         
         if not self.gpu_info:
-            print("❌ No GPUs detected")
+            print("ERROR: No GPUs detected")
             return
         
         for i, gpu in enumerate(self.gpu_info, 1):
-            print(f"\n📱 GPU #{i}:")
+            print(f"\nGPU #{i}:")
             print(f"   Vendor: {gpu.get('vendor', 'Unknown')}")
             print(f"   Name: {gpu.get('name', 'Unknown')}")
             
@@ -159,7 +159,7 @@ class GPUDetector:
             if 'pci_id' in gpu:
                 print(f"   PCI ID: {gpu['pci_id']}")
         
-        print(f"\n📊 Total GPUs Found: {len(self.gpu_info)}")
+        print(f"\nTotal GPUs Found: {len(self.gpu_info)}")
     
     def save_results(self, filename='gpu_detection_results.json'):
         """Save results to JSON file"""
@@ -172,13 +172,13 @@ class GPUDetector:
         try:
             with open(filename, 'w') as f:
                 json.dump(results, f, indent=2)
-            print(f"\n💾 Results saved to: {filename}")
+            print(f"\nResults saved to: {filename}")
         except Exception as e:
-            print(f"❌ Error saving results: {e}")
+            print(f"ERROR: Could not save results: {e}")
     
     def run_detection(self):
         """Run full GPU detection"""
-        print("🚀 Starting GPU Detection...")
+        print("Starting GPU Detection...")
         print("="*60)
         
         self.get_system_info()
@@ -196,10 +196,10 @@ def main():
     
     # Exit with status code based on detection
     if gpu_info:
-        print(f"\n✅ Detection completed successfully! Found {len(gpu_info)} GPU(s)")
+        print(f"\nDetection completed successfully! Found {len(gpu_info)} GPU(s)")
         sys.exit(0)
     else:
-        print("\n⚠️  No GPUs detected")
+        print("\nWARNING: No GPUs detected")
         sys.exit(1)
 
 

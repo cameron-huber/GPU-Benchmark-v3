@@ -1,0 +1,117 @@
+GPU Benchmark v3 - GPU Detection Tool
+======================================
+Starting GPU Detection...
+============================================================
+STATUS: Gathering system information...
+STATUS: Detecting NVIDIA GPUs...
+STATUS: Detecting additional GPUs via lspci...
+
+============================================================
+GPU DETECTION RESULTS
+============================================================
+System: antalpha-Super-Server100207
+OS: Ubuntu 22.04.4 LTS
+CPU: AMD EPYC 7282 16-Core Processor
+Memory: 251 GB
+Detection Time: 2025-07-09T05:07:46.090392
+
+------------------------------------------------------------
+GPU HARDWARE INFORMATION
+------------------------------------------------------------
+
+GPU #1:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 32°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:01:00.0
+
+GPU #2:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 30°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:21:00.0
+
+GPU #3:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 31°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:22:00.0
+
+GPU #4:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 32°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:41:00.0
+
+GPU #5:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 32°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:42:00.0
+
+GPU #6:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 33°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:61:00.0
+
+GPU #7:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 29°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:A1:00.0
+
+GPU #8:
+   Vendor: NVIDIA
+   Name: NVIDIA GeForce RTX 4090
+   Driver: 575.57.08
+   Memory: 24564 MB
+   Max Power: 450.00 W
+   Temperature: 29°C
+   Compute Capability: 8.9
+   Bus ID: 00000000:A2:00.0
+
+GPU #9:
+   Vendor: Unknown
+   Name: ASPEED Technology, Inc. ASPEED Graphics Family (rev 52)
+   PCI ID: 04:00.0 VGA compatible controller
+
+Total GPUs Found: 9
+
+Results saved to: gpu_detection_results.json
+
+Detection completed successfully! Found 9 GPU(s)
+
+SYSTEM SUMMARY:
+===============
+Total GPUs: 9
+NVIDIA GPUs: 8
+Other GPUs: 1

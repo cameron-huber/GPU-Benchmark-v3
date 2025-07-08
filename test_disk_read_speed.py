@@ -36,7 +36,7 @@ def get_disk_info(path="."):
 
 def test_disk_read_speed():
     """Test disk read speed"""
-    print("💾 Disk Read Speed Test")
+    print("STORAGE: Disk Read Speed Test")
     print("=======================")
     
     temp_file = "temp_test_file_1gb.dat"
@@ -44,47 +44,47 @@ def test_disk_read_speed():
     test_size_bytes = test_size_mb * 1024 * 1024
     
     # Check disk space
-    print("🔍 Checking disk space...")
+    print("STATUS: Checking disk space...")
     disk_info = get_disk_info()
     if not disk_info:
-        print("❌ Error: Could not get disk information")
+        print("ERROR: Error: Could not get disk information")
         return
     
     required_bytes = test_size_bytes + (100 * 1024 * 1024)  # 100MB buffer
     if disk_info['free_bytes'] < required_bytes:
-        print(f"❌ Error: Insufficient disk space")
+        print(f"ERROR: Error: Insufficient disk space")
         print(f"   Required: {required_bytes / (1024**3):.2f}GB")
         print(f"   Available: {disk_info['free_gb']:.2f}GB")
         return
     
-    print(f"✅ Disk space check passed ({disk_info['free_gb']:.2f}GB available)")
+    print(f"SUCCESS: Disk space check passed ({disk_info['free_gb']:.2f}GB available)")
     
     # Cleanup function
     def cleanup():
         if os.path.exists(temp_file):
-            print("🧹 Cleaning up temporary file...")
+            print("CLEANUP: Cleaning up temporary file...")
             os.remove(temp_file)
     
     try:
         # Create test file
-        print("📝 Creating 1GB test file with random data...")
+        print("CREATING: Creating 1GB test file with random data...")
         print("   This may take a moment...")
         
         start_time = time.time()
         stdout, stderr, returncode = run_command(f"dd if=/dev/urandom of={temp_file} bs=1M count={test_size_mb}")
         
         if returncode != 0:
-            print(f"❌ Error: Failed to create test file: {stderr}")
+            print(f"ERROR: Error: Failed to create test file: {stderr}")
             return
         
         create_time = time.time() - start_time
-        print(f"✅ Test file created successfully ({create_time:.2f}s)")
+        print(f"SUCCESS: Test file created successfully ({create_time:.2f}s)")
         
         # Sync to ensure data is written to disk
         os.sync()
         
         # Clear filesystem cache (best effort)
-        print("🔄 Clearing filesystem cache...")
+        print("PROCESSING: Clearing filesystem cache...")
         try:
             with open('/proc/sys/vm/drop_caches', 'w') as f:
                 f.write('3')
@@ -92,7 +92,7 @@ def test_disk_read_speed():
             print("   Cache clear skipped (no root privileges)")
         
         # Perform read test
-        print("📊 Performing read speed test...")
+        print("TESTING: Performing read speed test...")
         print("   Reading 1GB file...")
         
         start_time = time.time()
@@ -100,7 +100,7 @@ def test_disk_read_speed():
         read_time = time.time() - start_time
         
         if returncode != 0:
-            print(f"❌ Error: Read test failed: {stderr}")
+            print(f"ERROR: Error: Read test failed: {stderr}")
             return
         
         # Calculate speed
@@ -108,7 +108,7 @@ def test_disk_read_speed():
         
         # Display results
         print("")
-        print("📈 Read Speed Test Results:")
+        print("RESULTS: Read Speed Test Results:")
         print("==========================")
         print(f"File size: {test_size_mb}MB ({test_size_bytes:,} bytes)")
         print(f"Read time: {read_time:.2f}s")
@@ -116,19 +116,19 @@ def test_disk_read_speed():
         
         # Performance classification
         if speed_mbps > 500:
-            performance = "🚀 Excellent (NVMe SSD)"
+            performance = "EXCELLENT: Excellent (NVMe SSD)"
         elif speed_mbps > 200:
-            performance = "✅ Good (SATA SSD)"
+            performance = "SUCCESS: Good (SATA SSD)"
         elif speed_mbps > 100:
-            performance = "⚠️  Fair (Fast HDD)"
+            performance = "WARNING:  Fair (Fast HDD)"
         else:
-            performance = "🐌 Slow (Traditional HDD)"
+            performance = "SLOW: Slow (Traditional HDD)"
         
         print(f"Performance: {performance}")
         
         # Additional system info
         print("")
-        print("💾 Storage Information:")
+        print("STORAGE: Storage Information:")
         print("======================")
         print(f"Total space: {disk_info['total_gb']:.2f}GB")
         print(f"Used space: {disk_info['used_gb']:.2f}GB")
@@ -157,8 +157,8 @@ def test_disk_read_speed():
         with open('disk_read_speed_results.json', 'w') as f:
             json.dump(results, f, indent=2)
         
-        print(f"\n💾 Results saved to: disk_read_speed_results.json")
-        print("✅ Disk read speed test completed")
+        print(f"\nSTORAGE: Results saved to: disk_read_speed_results.json")
+        print("SUCCESS: Disk read speed test completed")
         
     finally:
         cleanup()

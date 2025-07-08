@@ -1,16 +1,16 @@
 {
-  "timestamp": "2025-07-09T03:28:06.249052",
+  "timestamp": "2025-07-09T05:08:26.206018",
   "test_size_mb": 1024,
   "test_size_bytes": 1073741824,
-  "read_time_seconds": 0.25,
-  "read_speed_mbps": 4077.55,
-  "performance_category": "\ud83d\ude80 Excellent (NVMe SSD)",
+  "read_time_seconds": 0.19,
+  "read_speed_mbps": 5373.08,
+  "performance_category": "EXCELLENT: Excellent (NVMe SSD)",
   "disk_info": {
     "total_bytes": 3777703301120,
-    "used_bytes": 635162624000,
-    "free_bytes": 2984172912640,
+    "used_bytes": 635193335808,
+    "free_bytes": 2984142200832,
     "total_gb": 3518.26,
-    "used_gb": 591.54,
-    "free_gb": 2779.23
+    "used_gb": 591.57,
+    "free_gb": 2779.2
   }
 }

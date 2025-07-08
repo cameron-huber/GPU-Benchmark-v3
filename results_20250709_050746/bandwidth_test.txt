@@ -1,0 +1,24 @@
+STATUS: PCIe/NVLink Bandwidth Test
+==================================================
+GPU: Detected 8 GPUs
+
+TESTING: Running All-Reduce test...
+SUCCESS: All-Reduce
+   Max Algorithm BW: 1.18 GB/s
+   Max Bus BW: 2.06 GB/s
+   Average Bus BW: 0.88 GB/s
+
+TESTING: Running All-Gather test...
+WARNING:  All-Gather - Could not parse bandwidth data
+
+TESTING: Running Broadcast test...
+WARNING:  Broadcast - Could not parse bandwidth data
+
+TESTING: Running Reduce-Scatter test...
+SUCCESS: Reduce-Scatter
+   Max Algorithm BW: 1.86 GB/s
+   Max Bus BW: 1.63 GB/s
+   Average Bus BW: 0.72 GB/s
+
+RESULTS: Results saved to: bandwidth_test_results.json
+SUCCESS: Bandwidth test completed

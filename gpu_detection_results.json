@@ -5,7 +5,7 @@
     "os": "Ubuntu 22.04.4 LTS",
     "cpu": "AMD EPYC 7282 16-Core Processor",
     "memory_gb": "251",
-    "detection_time": "2025-07-09T02:07:43.876489"
+    "detection_time": "2025-07-09T05:07:46.090392"
   },
   "gpu_info": [
     {
@@ -27,7 +27,7 @@
       "driver_version": "575.57.08",
       "memory_total_mb": "24564",
       "power_max_limit_w": "450.00",
-      "temperature_c": "31",
+      "temperature_c": "30",
       "compute_capability": "8.9",
       "bus_id": "00000000:21:00.0",
       "uuid": "GPU-fc86980e-52fe-df6d-63e3-26f3b5d32dd5"
@@ -39,7 +39,7 @@
       "driver_version": "575.57.08",
       "memory_total_mb": "24564",
       "power_max_limit_w": "450.00",
-      "temperature_c": "32",
+      "temperature_c": "31",
       "compute_capability": "8.9",
       "bus_id": "00000000:22:00.0",
       "uuid": "GPU-cff6fb20-55da-2366-4017-ed553f7f1ae0"
@@ -51,7 +51,7 @@
       "driver_version": "575.57.08",
       "memory_total_mb": "24564",
       "power_max_limit_w": "450.00",
-      "temperature_c": "33",
+      "temperature_c": "32",
       "compute_capability": "8.9",
       "bus_id": "00000000:41:00.0",
       "uuid": "GPU-078ea885-9ad1-4c80-a4cb-912ef149e648"
@@ -63,7 +63,7 @@
       "driver_version": "575.57.08",
       "memory_total_mb": "24564",
       "power_max_limit_w": "450.00",
-      "temperature_c": "33",
+      "temperature_c": "32",
       "compute_capability": "8.9",
       "bus_id": "00000000:42:00.0",
       "uuid": "GPU-9782d0a2-84b6-c154-6824-d825f0bee9b6"
@@ -87,7 +87,7 @@
       "driver_version": "575.57.08",
       "memory_total_mb": "24564",
       "power_max_limit_w": "450.00",
-      "temperature_c": "30",
+      "temperature_c": "29",
       "compute_capability": "8.9",
       "bus_id": "00000000:A1:00.0",
       "uuid": "GPU-0ab15501-09de-e8a4-d127-5183aa9a47fe"
@@ -99,7 +99,7 @@
       "driver_version": "575.57.08",
       "memory_total_mb": "24564",
       "power_max_limit_w": "450.00",
-      "temperature_c": "30",
+      "temperature_c": "29",
       "compute_capability": "8.9",
       "bus_id": "00000000:A2:00.0",
       "uuid": "GPU-6bb03b7f-fe35-4db3-f48d-f9fa60c5b953"
