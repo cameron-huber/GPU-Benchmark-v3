@@ -1,0 +1,109 @@
+{
+  "timestamp": "2025-07-09T03:19:16.116242",
+  "gpu_count": 1,
+  "topology_matrix": [
+    {
+      "gpu_id": "GPU1",
+      "connections": [
+        "NODE"
+      ],
+      "cpu_affinity": " X ",
+      "numa_affinity": "PHB"
+    },
+    {
+      "gpu_id": "GPU2",
+      "connections": [
+        "NODE"
+      ],
+      "cpu_affinity": "PHB",
+      "numa_affinity": " X "
+    },
+    {
+      "gpu_id": "GPU3",
+      "connections": [
+        "NODE"
+      ],
+      "cpu_affinity": "NODE",
+      "numa_affinity": "NODE"
+    },
+    {
+      "gpu_id": "GPU4",
+      "connections": [
+        "NODE"
+      ],
+      "cpu_affinity": "NODE",
+      "numa_affinity": "NODE"
+    },
+    {
+      "gpu_id": "GPU5",
+      "connections": [
+        "NODE"
+      ],
+      "cpu_affinity": "NODE",
+      "numa_affinity": "NODE"
+    },
+    {
+      "gpu_id": "GPU6",
+      "connections": [
+        "SYS"
+      ],
+      "cpu_affinity": "SYS",
+      "numa_affinity": "SYS"
+    },
+    {
+      "gpu_id": "GPU7",
+      "connections": [
+        "SYS"
+      ],
+      "cpu_affinity": "SYS",
+      "numa_affinity": "SYS"
+    }
+  ],
+  "bus_info": {
+    "GPU0": {
+      "bus_id": "00000000:01:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "GPU1": {
+      "bus_id": "00000000:21:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "GPU2": {
+      "bus_id": "00000000:22:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "GPU3": {
+      "bus_id": "00000000:41:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "GPU4": {
+      "bus_id": "00000000:42:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "GPU5": {
+      "bus_id": "00000000:61:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "GPU6": {
+      "bus_id": "00000000:A1:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "GPU7": {
+      "bus_id": "00000000:A2:00.0",
+      "name": "NVIDIA GeForce RTX 4090"
+    }
+  },
+  "connection_counts": {
+    "NODE": 2,
+    "SYS": 1
+  },
+  "nvlink_connections": 0,
+  "numa_nodes": [
+    "PHB",
+    "X",
+    "SYS",
+    "NODE"
+  ],
+  "total_connections": 3,
+  "raw_topology": "\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNODE\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\t0-15,32-47\t0\t\tN/A\nGPU1\tNODE\t X \tPHB\tNODE\tNODE\tNODE\tSYS\tSYS\t0-15,32-47\t0\t\tN/A\nGPU2\tNODE\tPHB\t X \tNODE\tNODE\tNODE\tSYS\tSYS\t0-15,32-47\t0\t\tN/A\nGPU3\tNODE\tNODE\tNODE\t X \tPHB\tNODE\tSYS\tSYS\t0-15,32-47\t0\t\tN/A\nGPU4\tNODE\tNODE\tNODE\tPHB\t X \tNODE\tSYS\tSYS\t0-15,32-47\t0\t\tN/A\nGPU5\tNODE\tNODE\tNODE\tNODE\tNODE\t X \tSYS\tSYS\t0-15,32-47\t0\t\tN/A\nGPU6\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t X \tPHB\t16-31,48-63\t1\t\tN/A\nGPU7\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPHB\t X \t16-31,48-63\t1\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks"
+}
